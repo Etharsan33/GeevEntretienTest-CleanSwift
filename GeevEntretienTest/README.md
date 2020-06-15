@@ -10,7 +10,7 @@
 -> | Protocols  = Tous les procolols
 -> | Helper = Tous les Helper
 -> | Models = Tous les models de l'application lié aux données du serveur
--> | Core = Le noyau de l'application (ViewController, Views, ViewModel, Worker, Coordinator)
+-> | Core = Le noyau de l'application (ViewController, Views, CSConfig, Worker, Interactor, Presenter, Router)
 -> | Resources = Localizable strings, Assets, LauchScreen
 
 ## Explication Architecture

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Donations View Controller-->
+        <scene sceneID="ziO-UQ-CIH">
+            <objects>
+                <viewController storyboardIdentifier="DonationsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dCT-UT-0wB" customClass="DonationsViewController" customModule="GeevEntretienTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="es6-RU-iaj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VPc-9b-Ah1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sks-UY-jP9" customClass="AlignedCollectionViewFlowLayout" customModule="GeevEntretienTest" customModuleProvider="target">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z7w-Mj-JTe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rmk-r1-Aix" firstAttribute="bottom" secondItem="VPc-9b-Ah1" secondAttribute="bottom" id="1vi-a1-3gQ"/>
+                            <constraint firstItem="z7w-Mj-JTe" firstAttribute="leading" secondItem="Rmk-r1-Aix" secondAttribute="leading" id="NJM-hY-jZf"/>
+                            <constraint firstItem="VPc-9b-Ah1" firstAttribute="top" secondItem="Rmk-r1-Aix" secondAttribute="top" id="S1e-oZ-9jW"/>
+                            <constraint firstItem="VPc-9b-Ah1" firstAttribute="leading" secondItem="Rmk-r1-Aix" secondAttribute="leading" id="aCh-oN-BlC"/>
+                            <constraint firstItem="z7w-Mj-JTe" firstAttribute="top" secondItem="Rmk-r1-Aix" secondAttribute="top" id="lLo-PW-ksa"/>
+                            <constraint firstItem="z7w-Mj-JTe" firstAttribute="trailing" secondItem="Rmk-r1-Aix" secondAttribute="trailing" id="oCF-JB-LXg"/>
+                            <constraint firstItem="VPc-9b-Ah1" firstAttribute="trailing" secondItem="Rmk-r1-Aix" secondAttribute="trailing" id="orl-vp-DYz"/>
+                            <constraint firstItem="Rmk-r1-Aix" firstAttribute="bottom" secondItem="z7w-Mj-JTe" secondAttribute="bottom" id="qXn-9x-kcg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rmk-r1-Aix"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="VPc-9b-Ah1" id="TYH-QJ-pfb"/>
+                        <outlet property="mapView" destination="z7w-Mj-JTe" id="b7V-iX-GQN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjl-AD-AgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="121"/>
+        </scene>
+    </scenes>
+</document>

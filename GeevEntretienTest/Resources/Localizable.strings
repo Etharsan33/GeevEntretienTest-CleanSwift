@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  GeevEntretienTest
+
+  Created by ELANKUMARAN Tharsan on 13/06/2020.
+  Copyright © 2020 ELANKUMARAN Tharsan. All rights reserved.
+*/
+
+// ERROR
+"ERROR_DEFAULT_TILE" = "Erreur";
+
+// TABS
+"TAB_DONATION" = "Donations";
+"TAB_CREATION" = "Créer";
+"TAB_MESSAGES" = "Messages";
+"TAB_PROFILE" = "Profile";
+
+// DONATION
+"DONATION_SUBTITLE" = "Donner une seconde vie à vos objects";
+"DONATION_NO_RESULT" = "Aucun résultat";
